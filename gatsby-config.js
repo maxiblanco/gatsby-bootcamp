@@ -8,6 +8,10 @@ const path = require('path')
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: 'Portfolio Gatsby Site',
+    author: 'Maximiliano Blanco',
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-root-import',
@@ -19,6 +23,14 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-sass'
-    }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `scr`,
+        path: `${__dirname}/src/`
+      }
+    },
+    'gatsby-transformer-remark'
   ]
 }
