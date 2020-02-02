@@ -13,6 +13,7 @@ module.exports = {
     author: 'Maximiliano Blanco',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {
