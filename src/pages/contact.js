@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "src/components/Layout"
-import Head from "src/components/Layout"
+import Head from "src/components/Head"
 
 const ContactPage = () => {
   return (
